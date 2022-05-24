@@ -3,8 +3,7 @@
     "description": "A Ghost theme",
     "version": "1.0.0",
     "engines": {
-        "ghost": ">=4.0.0",
-        "ghost-api": "v4"
+        "ghost": ">=4.0.0"
     },
     "license": "MIT",
     "author": {
@@ -38,6 +37,59 @@
             "xxl": {
                 "width": 1920
             }
+        },
+        "card_assets": true,
+        "custom": {
+            "title_font": {
+                "type": "select",
+                "options": ["Modern sans-serif", "Elegant serif"],
+                "default": "Modern sans-serif"
+            },
+            "body_font": {
+                "type": "select",
+                "options": ["Modern sans-serif", "Elegant serif"],
+                "default": "Modern sans-serif"
+            },
+            "color_scheme": {
+                "type": "select",
+                "options": [
+                    "Auto",
+                    "Light",
+                    "Dark"
+                ],
+                "default": "Auto"
+            },
+            "white_logo_for_dark_mode": {
+                "type": "image"
+            },
+            "content_api_key_for_search": {
+                "type": "text"
+            },
+            "show_featured_posts": {
+                "type": "boolean",
+                "default": true,
+                "group": "homepage"
+            },
+            "featured_title": {
+                "type": "text",
+                "default": "Featured articles",
+                "group": "homepage"
+            },
+            "show_share_links": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
+            "show_author": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
+            "show_related_posts": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            }
         }
     },
     "scripts": {
@@ -48,23 +100,23 @@
         "zip": "gulp zip"
     },
     "devDependencies": {
-        "autoprefixer": "10.3.1",
+        "autoprefixer": "10.4.7",
         "beeper": "2.1.0",
-        "cssnano": "5.0.7",
-        "gscan": "4.2.1",
+        "cssnano": "5.1.9",
+        "gscan": "4.29.2",
         "gulp": "4.0.2",
         "gulp-concat": "2.6.1",
         "gulp-livereload": "4.0.2",
-        "gulp-postcss": "9.0.0",
+        "gulp-postcss": "9.0.1",
         "gulp-stylelint": "13.0.0",
         "gulp-uglify": "3.0.2",
         "gulp-zip": "5.1.0",
-        "postcss": "8.3.6",
-        "postcss-easy-import": "3.0.0",
+        "postcss": "8.4.14",
+        "postcss-easy-import": "4.0.0",
         "pump": "3.0.0",
-        "stylelint": "13.13.1",
-        "stylelint-config-standard": "22.0.0",
-        "stylelint-order": "4.1.0"
+        "stylelint": "14.8.3",
+        "stylelint-config-standard": "25.0.0",
+        "stylelint-order": "5.0.0"
     },
     "browserslist": [
         "defaults"
